@@ -83,7 +83,7 @@ function History({ userSettings }: { userSettings: userSettings }) {
         <CardContent>
           <SkeletonWrapper
             isLoading={historyDataQuery.isFetching}
-            fullwidth={true}
+            fullWidth={true}
           >
             {dataAvailable && (
               <ResponsiveContainer width={"100%"} height={300}>
