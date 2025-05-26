@@ -71,7 +71,7 @@ function CreateCategoryDialog({ type, SuccessCallback, trigger }: Props) {
         icon: "",
       });
       toast.success(`Category ${data.name} are created successfully`, {
-        id: "create-category",
+        id: "create category",
       });
 
       SuccessCallback(data);
