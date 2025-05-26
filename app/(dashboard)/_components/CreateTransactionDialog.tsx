@@ -58,7 +58,7 @@ function CreateTransactionDialog({ trigger, type }: Props) {
       date: new Date(),
     },
   });
-  const { open, setOpen } = useState(false);
+  const [open, setOpen] = useState(false);
   const handleCategoryChange = useCallback(
     (value: string) => {
       form.setValue("category", value);
