@@ -81,7 +81,10 @@ function History({ userSettings }: { userSettings: userSettings }) {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <SkeletonWrapper isLoading={historyDataQuery.isFetching}>
+          <SkeletonWrapper
+            isLoading={historyDataQuery.isFetching}
+            fullwidth={true}
+          >
             {dataAvailable && (
               <ResponsiveContainer width={"100%"} height={300}>
                 <BarChart
